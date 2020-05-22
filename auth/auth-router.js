@@ -27,7 +27,7 @@ router.post('/register', (req, res) => {
       })
   } else {
     res.status(400).json({
-        message: 'Please provide username and password and the password shoud be alphanumeric.',
+      message: 'Please provide username and password and the password shoud be alphanumeric.',
     })
   }
 })
@@ -49,11 +49,11 @@ router.post('/login', (req, res) => {
         }
       })
       .catch(error => {
-          res.status(500).json({ message: error.message })
+        res.status(500).json({ message: error.message })
       })
   } else {
     res.status(400).json({
-        message: 'You shall not pass!',
+      message: 'You shall not pass!',
     })
   }
 })
